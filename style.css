@@ -39,6 +39,24 @@ h1 {
   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
   padding: 20px;
 }
+#privacyPolicyModal {
+  display: none;
+  padding: 1.1%;
+}
+.close {
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: black;
+  border-radius: 40px;
+  color: #ff3366;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 90%;
+  margin-top: 5%;
+}
+.close:hover {
+  cursor: pointer;
+}
 
 .container::before {
   content: "";
