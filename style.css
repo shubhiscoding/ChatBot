@@ -3,9 +3,6 @@ body {
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8e5ea; /* Light pink background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
@@ -13,6 +10,9 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  margin: 1% auto;
+  width: 80%;
+  max-width: 800px; /* Adjust the maximum width as needed */
 }
 
 iframe {
@@ -34,11 +34,10 @@ h1 {
   margin-bottom: 0;
   margin-top: 0;
 }
+
 .container {
-  margin-top: 1%;
   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
   padding: 20px;
-  width: 50%;
 }
 
 .container::before {
@@ -52,4 +51,17 @@ h1 {
   opacity: 0.5;
   z-index: -1;
   border-radius: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 2em;
+  }
 }
